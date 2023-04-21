@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eea5c393-bd8c-4ede-8440-32e7c61f8e63" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../PyTest_HW/PyTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PyTest_HW/PyTest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PyTest_HW/PyTest/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PyTest_HW/PyTest/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PyTest_HW/PyTest/test_cases.py" beforeDir="false" afterPath="$PROJECT_DIR$/../PyTest_HW/PyTest/test_cases.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RF_Tests/tests/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/RF_Tests/tests/log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RF_Tests/tests/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/RF_Tests/tests/output.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RF_Tests/tests/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/RF_Tests/tests/report.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2NuKOfaujG9r7cTtFz6pZmqt28s" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Anastasiya_Viktarovi/Documents/GitHub/Data-Quality-Engineering-Mentoring-Program-Intermediate-Level-9/RobotFramework_HW"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eea5c393-bd8c-4ede-8440-32e7c61f8e63" name="Changes" comment="" />
+      <created>1680508498161</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680508498161</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
