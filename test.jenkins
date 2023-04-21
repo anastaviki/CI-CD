@@ -1,0 +1,73 @@
+pipeline {
+    agent any
+	tools {
+        git 'my-git'
+    }
+	environment {
+
+        PYTHONPATH = '/var/jenkins_home/.local/lib/python3.9/site-packages'
+    }
+    stages {
+		stage('Inst') {
+            steps {
+                 sh 'echo $PYTHONPATH'
+            }
+        }
+		stage('Checkout') {
+            steps {
+                git branch: 'develop', url: 'https://github.com/anastaviki/ci-cd.git'
+
+            }
+        }
+		stage('Install dependencies') {
+            steps {
+			
+                sh 'pip install -r requirements.txt'
+				sh 'pip3 list'
+            }
+        }
+		stage('Run Pytest') {
+            steps {
+			script {
+                    try {
+                        sh 'python3 -m pytest PyTest_HW/PyTest/test_cases.py --html=PyTest_HW/PyTest/report.html '
+                    } catch (err) {
+                        currentBuild.result = 'FAILURE'
+                        error("Pytest failed with error: ${err}")
+                    }
+                }                
+            }
+        }
+		stage('Run Robot Framework Tests') {
+            steps {
+			script {
+                    try {
+                        sh 'python3 -m robot -d RobotFramework_HW/RF_Tests/tests/ RobotFramework_HW/RF_Tests/tests/'
+                    } catch (err) {
+                        currentBuild.result = 'FAILURE'
+                        error("Robot Framework tests failed with error: ${err}")
+                    }
+                }               
+            }
+        }
+		stage('Commit and Push Changes') {
+			steps {
+				script {
+					sh 'git add .'
+					sh 'git commit -m "Commit message for release branch"'
+					sh 'git push origin develop'
+				}
+			}
+		}
+		 stage('Move to Release Branch') {
+			steps {
+				script {
+					def date = new Date().format('yyyyMMdd')
+					sh "git checkout -B release_b-$date"
+					sh "git merge origin/develop"
+					sh "git push origin release_b-$date"
+				}
+			}
+		}
+    }
+}
